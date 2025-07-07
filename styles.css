@@ -1,4 +1,11 @@
 /* Fondo elegante con gradiente */
+  .pantalla {
+    display: none; /* Oculta por defecto */
+  }
+
+  .visible {
+    display: block; /* Muestra cuando tenga esta clase */
+  }
 body {
   margin: 0;
   padding: 0;

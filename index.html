@@ -7,13 +7,66 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="contenedor">
+    <!--tamaño-->
+    <div id="tamano" class="pantalla visible contenedor">
     <h1>Tamaño</h1>
-    <div class="botones">
-      <button>S</button>
-      <button>M</button>
-      <button>F</button>
+        <div class="botones">
+            <button onclick="tamano('s');">S</button>
+             <button onclick="tamano('m');">M</button>
+            <button onclick="tamano('f');">F</button>
+        </div>
     </div>
-  </div>
+
+    <!--numsab-->
+    <div class="pantalla contenedor" id="numsab">
+    <h1>Numero de sabores</h1>
+        <div class="botones">
+            <button onclick="numsab(1);">1</button>
+            <button onclick="numsab(2);">2</button>
+            <button onclick="numsab(3);">3</button>
+      <button onclick="numsab(4);">4</button>
+        </div>
+    </div>
+
+    <!--sab-->
+    <div class="pantalla contenedor"; id="sab">
+    <h1>Sabores</h1>
+    <p id="saborcitos"></p>
+        <div class="botones">
+            <button onclick="elegirsabores('Jamon');">Jamon</button>
+            <button onclick="elegirsabores('Hawaiana');">Hawaiana</button>
+            <button onclick="elegirsabores('PyChamp');">PyChamp.</button>
+            <button onclick="elegirsabores('PyVeg');">PyVeg</button>
+                <br>
+            <button onclick="elegirsabores('Salami');">Salami</button>
+            <button onclick="elegirsabores('Peperoni');">Peperoni</button>
+            <button onclick="elegirsabores('Choributi');">Choributi</button>
+            <button onclick="elegirsabores('Vegetariana');">Vegetariana</button>
+                <br>
+            <button onclick="elegirsabores('Revolcon');">Revolcon</button>
+            <button onclick="elegirsabores('TyMaiz');">TyMaiz</button>
+            <button onclick="elegirsabores('Ranchera');">Ranchera</button>
+            <button onclick="elegirsabores('Mexicana');">Mexicana</button>
+        </div>
+
+            
+            <div class="boton-calcular">
+            <button onclick="cambio();">Calcular</button>
+            </div>
+    </div>
+
+    <!--Precio-->
+    <div class="pantalla contenedor"; id="precio">
+    <h1>Precio</h1>
+    
+        
+        <div class="resultado" id="resultado">
+            <h2 id="saba"></h2>
+        <p id="texto"></p>
+        </div>
+
+    </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
