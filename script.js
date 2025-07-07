@@ -89,12 +89,15 @@ function cambio(){
     if(nusab === 2){ precio = suma /2 };
     if(nusab === 3){ precio = suma /3 };
     if(nusab === 4){ precio = suma /4 };
+    precio = redondearMil(precio);
     asignarTextoElemento(lista, "#saba");
     asignarTextoElemento(precio, "#texto");
 };
 
 
-
+function redondearMil(numero) {
+  return Math.ceil(numero / 1000) * 1000;
+}
 
 function asignarTextoElemento(texto, elemento){
     let a = document.querySelector(elemento);
