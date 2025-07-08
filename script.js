@@ -33,7 +33,7 @@ function elegirsabores(x){
         tope++;
     asignarTextoElemento(lista,'#saborcitos');
     };
-    
+    if(lista.length === nusab){document.getElementById('calc').classList.add('visible')};
 };
 
 function cambio(){
