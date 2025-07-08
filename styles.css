@@ -6,6 +6,10 @@
   .visible {
     display: block; /* Muestra cuando tenga esta clase */
   }
+
+.info{
+  color: maroon;
+}
 body {
   margin: 0;
   padding: 0;
